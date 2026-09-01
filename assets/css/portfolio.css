@@ -46,4 +46,14 @@ body { background: var(--paper); color: var(--ink); }
 .project-detail p, .project-detail li { color: #526171; line-height: 1.8; }
 .project-detail ul { padding-left: 22px; }
 .project-detail .back-link { display: inline-block; margin-bottom: 32px; }
+.additional-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.additional-tile { min-width: 0; padding-bottom: 18px; border: 1px solid #dce2e8; background: #fff; }
+.additional-tile > a:first-child { display: block; color: inherit; text-decoration: none; }
+.additional-tile img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom: 1px solid #dce2e8; }
+.additional-tile h2 { margin: 15px 15px 8px; color: var(--accent); font-size: 17px; line-height: 1.15; }
+.additional-tile p { margin: 0 15px 13px; color: #526171; font-size: 12px; line-height: 1.55; }
+.additional-tile .tile-link { margin: 0 15px; color: var(--accent); font-size: 12px; font-weight: 700; }
 @media only screen and (max-width: 768px) { .portfolio-intro { padding-top: 0; } .portfolio-feature, .project-grid, .project-list-item { grid-template-columns: 1fr; } .portfolio-feature, .project-list-item { gap: 18px; } .skill-list div { grid-template-columns: 1fr; gap: 5px; } .project-list-item h2 { font-size: 24px; } }
+@media only screen and (max-width: 1024px) { .additional-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media only screen and (max-width: 768px) { .additional-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .additional-tile h2 { margin-left: 11px; margin-right: 11px; font-size: 15px; } .additional-tile p { margin-left: 11px; margin-right: 11px; font-size: 11px; } .additional-tile .tile-link { margin-left: 11px; margin-right: 11px; } }
+@media only screen and (max-width: 430px) { .additional-grid { grid-template-columns: 1fr; } }

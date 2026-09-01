@@ -7,7 +7,7 @@ permalink: /work/hijabsheily-ims/
 
 <article class="project-detail">
   <a class="back-link" href="{{ '/' | relative_url }}">&larr; Back to selected work</a>
-  <p class="project-meta">2024-Present / Operations</p>
+  <p class="project-meta">2024-2026 / Operations</p>
   <h1>HijabSheily Internal Management System</h1>
   <img src="{{ '/assets/img/hijabsheily-dashboard.png' | relative_url }}" alt="Internal management system dashboard" />
   <h2>Overview</h2>

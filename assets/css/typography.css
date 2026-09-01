@@ -1,0 +1,19 @@
+/* Portfolio typography and link treatment layered on top of Flexible-Jekyll. */
+:root { --display: "Manrope", sans-serif; --mono: "DM Mono", monospace; --link: #587b00; --link-dark: #263959; }
+body, button, input, textarea { font-family: var(--display); }
+.sidebar .about .author-name { font-family: var(--display); font-weight: 800; }
+.sidebar .about p, .sidebar .copyright p { font-family: var(--display); }
+.content-box h1, .content-box h2, .content-box h3 { font-family: var(--display); font-weight: 800; letter-spacing: -.045em; }
+.content-box p, .content-box li, .content-box dd { font-family: var(--display); }
+.content-box .kicker, .content-box .section-label, .content-box .project-meta, .content-box .stack { font-family: var(--mono); letter-spacing: .07em; }
+.content-box a { color: var(--link-dark); text-decoration-thickness: 1px; text-underline-offset: 4px; transition: color .2s ease, background-size .2s ease; }
+.content-box a:hover { color: var(--link); }
+.portfolio-button { font-family: var(--display); box-shadow: 3px 3px 0 rgba(38,57,89,.18); transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease; }
+.portfolio-button:hover { color: #1d2b38; background-color: #b8e34a; box-shadow: 1px 1px 0 rgba(38,57,89,.18); transform: translate(2px, 2px); }
+.project-list-item h2 a { text-decoration: none; background-image: linear-gradient(var(--link), var(--link)); background-position: 0 100%; background-repeat: no-repeat; background-size: 0 2px; }
+.project-list-item h2 a:hover { background-size: 100% 2px; }
+.read-project, .back-link { display: inline-block; text-decoration: none !important; }
+.read-project::after { content: ""; display: inline-block; width: 28px; height: 1px; margin: 0 0 4px 8px; background: currentColor; transition: width .2s ease; }
+.read-project:hover::after { width: 40px; }
+.project-detail > p a:not(.back-link) { text-decoration-color: #a6ce39; text-decoration-thickness: 2px; }
+@media only screen and (max-width: 768px) { .content-box h1 { letter-spacing: -.06em; } .lead { font-size: 16px; } }

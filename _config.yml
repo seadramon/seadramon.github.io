@@ -1,13 +1,14 @@
 title: Damar Margi Wiguno | Software Developer
-description: Full-stack software developer experienced in Laravel, PHP, REST APIs, database design, system integration, and production maintenance.
+description: Backend-focused software developer with 13+ years of experience designing, building, and maintaining production information systems.
 baseurl: ""
 url: "https://seadramon.github.io"
 permalink: /:title/
 
 author: Damar Margi Wiguno
 author-img: damar-margiwiguno.jpg
-about-author: Software Developer building reliable backend and full-stack systems for automotive, healthcare, logistics, ERP, e-learning, crowdfunding, and asset management.
+about-author: 13+ years building production-ready systems from business-process analysis and database design to delivery, integration, and continuous improvement.
 social-github: seadramon
+social-email: percival5695@gmail.com
 
 markdown: kramdown
 plugins:

@@ -5,6 +5,8 @@ body, button, input, textarea { font-family: var(--display); }
 .sidebar .about .author-name { color: #ffffff !important; text-shadow: 0 1px 1px rgba(0, 0, 0, .2); }
 .sidebar .contact li.whatsapp a { color: #d8ff55; }
 .sidebar .contact li.whatsapp a:hover { color: #ffffff; }
+.sidebar .contact li.email a { color: #d8ff55; }
+.sidebar .contact li.email a:hover { color: #ffffff; }
 .sidebar .about p, .sidebar .copyright p { font-family: var(--display); }
 .content-box h1, .content-box h2, .content-box h3 { font-family: var(--display); font-weight: 800; letter-spacing: -.045em; }
 .content-box p, .content-box li, .content-box dd { font-family: var(--display); }

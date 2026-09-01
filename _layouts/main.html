@@ -32,4 +32,7 @@ layout: default
 </aside> <!-- End Sidebar -->
 <div class="content-box clearfix">
   {{ content }}
+  {% if page.url contains '/work/' %}
+    <p class="detail-footer"><a class="back-link" href="{{ '/' | relative_url }}">&larr; Back to selected work</a></p>
+  {% endif %}
 </div>

@@ -46,6 +46,8 @@ body { background: var(--paper); color: var(--ink); }
 .project-detail p, .project-detail li { color: #526171; line-height: 1.8; }
 .project-detail ul { padding-left: 22px; }
 .project-detail .back-link { display: inline-block; margin-bottom: 32px; }
+.detail-footer { margin-top: 42px; padding-top: 22px; border-top: 1px solid #dce2e8; }
+.detail-footer .back-link { margin-bottom: 0; }
 .additional-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 .additional-tile { min-width: 0; padding-bottom: 18px; border: 1px solid #dce2e8; background: #fff; }
 .additional-tile > a:first-child { display: block; color: inherit; text-decoration: none; }

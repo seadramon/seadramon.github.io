@@ -9,7 +9,7 @@ layout: default
         <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}"></a>
       </div>
       <div class="author-name">{{site.author}}</div>
-      <p>{{site.about-author}}</p>
+      <p>{% if page.sidebar_about %}{{page.sidebar_about}}{% else %}{{site.about-author}}{% endif %}</p>
     </div>
   </header> <!-- End Header -->
   <footer>
@@ -31,6 +31,7 @@ layout: default
   </footer> <!-- End Footer -->
 </aside> <!-- End Sidebar -->
 <div class="content-box clearfix">
+  <div class="language-switch" aria-label="Language"><span>{% if page.url contains '/id/' %}ID{% else %}EN{% endif %}</span><span class="language-divider">/</span>{% if page.url contains '/id/' %}{% assign english_url = page.url | remove_first: '/id' %}<a href="{{ english_url | relative_url }}">EN</a>{% else %}{% assign indonesia_url = page.url | prepend: '/id' %}<a href="{{ indonesia_url | relative_url }}">ID</a>{% endif %}</div>
   {{ content }}
   {% if page.url contains '/work/' %}
     <p class="detail-footer"><a class="back-link" href="{{ '/' | relative_url }}">&larr; Back to selected work</a></p>

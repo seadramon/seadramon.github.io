@@ -12,6 +12,7 @@ body, button, input, textarea { font-family: var(--display); }
 .portfolio-button:hover { color: #1d2b38; background-color: #b8e34a; box-shadow: 1px 1px 0 rgba(38,57,89,.18); transform: translate(2px, 2px); }
 .project-list-item h2 a { text-decoration: none; background-image: linear-gradient(var(--link), var(--link)); background-position: 0 100%; background-repeat: no-repeat; background-size: 0 2px; }
 .project-list-item h2 a:hover { background-size: 100% 2px; }
+.project-list-item .project-image-link img { aspect-ratio: 16 / 9; object-fit: cover; }
 .read-project, .back-link { display: inline-block; text-decoration: none !important; }
 .read-project::after { content: ""; display: inline-block; width: 28px; height: 1px; margin: 0 0 4px 8px; background: currentColor; transition: width .2s ease; }
 .read-project:hover::after { width: 40px; }

@@ -1,4 +1,4 @@
-# Damar Margiwiguno Portfolio
+# Damar Margi Wiguno Portfolio
 
 A GitHub Pages portfolio built by adapting the [Flexible-Jekyll](https://github.com/artemsheludko/flexible-jekyll) theme.
 

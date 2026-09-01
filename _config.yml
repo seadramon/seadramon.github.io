@@ -1,0 +1,20 @@
+title: Damar Margiwiguno | Software Developer
+description: Full-stack software developer experienced in Laravel, PHP, REST APIs, database design, system integration, and production maintenance.
+baseurl: ""
+url: "https://seadramon.github.io"
+permalink: /:title/
+
+author: Damar Margiwiguno
+author-img: damar-margiwiguno.jpg
+about-author: Software Developer building reliable backend and full-stack systems for automotive, healthcare, logistics, ERP, e-learning, crowdfunding, and asset management.
+social-github: seadramon
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - yarn.lock

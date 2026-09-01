@@ -1,5 +1,0 @@
-/* Keep all content available even if animation scripting is interrupted. */
-.reveal {
-  opacity: 1;
-  transform: none;
-}

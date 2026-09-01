@@ -1,74 +1,48 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Damar Margiwiguno - Software Developer portfolio" />
-    <title>Damar Margiwiguno | Software Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/overrides.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Damar Margiwiguno home">DM<span>.</span></a>
-      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-      </nav>
-    </header>
+---
+layout: main
+title: Software Developer Portfolio
+description: Selected work by Damar Margiwiguno, Software Developer.
+---
 
-    <main id="top">
-      <section class="hero section-shell">
-        <p class="eyebrow">Software Developer · Indonesia</p>
-        <h1>Building reliable systems<br />for real-world operations.</h1>
-        <p class="hero-copy">I am Damar Margiwiguno, a full-stack developer with deep Laravel and PHP experience across automotive, healthcare, logistics, ERP, e-learning, crowdfunding, and asset management.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore selected work <span>↓</span></a>
-          <a class="button button-quiet" href="assets/files/Damar-Margiwiguno-Portfolio.docx" download>Download portfolio</a>
-        </div>
-        <dl class="hero-facts" aria-label="Career highlights">
-          <div><dt>Focus</dt><dd>Backend &amp; full-stack</dd></div>
-          <div><dt>Core stack</dt><dd>Laravel · PHP · REST API</dd></div>
-          <div><dt>Workflow</dt><dd>AI-assisted development</dd></div>
-        </dl>
-      </section>
+<section class="portfolio-intro">
+  <p class="kicker">Software Developer · Indonesia</p>
+  <h1>Reliable systems for real-world operations.</h1>
+  <p class="lead">Full-stack developer with strong Laravel and PHP experience across automotive, healthcare, logistics, ERP, e-learning, crowdfunding, and asset management.</p>
+  <p><a class="portfolio-button" href="{{ '/assets/files/Damar-Margiwiguno-Portfolio.docx' | relative_url }}" download>Download portfolio</a></p>
+</section>
 
-      <section id="about" class="section-shell about-grid reveal">
-        <p class="section-number">01 / About</p>
-        <div>
-          <h2>A practical engineer from data model to production support.</h2>
-          <p>I work across the full delivery lifecycle: requirement analysis, database design, API development, integrations, deployment, optimization, maintenance, and code review. I use Codex and Claude Code to accelerate implementation, debugging, code exploration, refactoring, and delivery.</p>
-          <div class="statement"><span>13+</span><p>years of experience working on production software and operational workflows.</p></div>
-        </div>
-      </section>
+<section class="portfolio-section">
+  <p class="section-label">Selected work</p>
+  <article class="portfolio-feature">
+    <img src="{{ '/assets/img/motovax-unit-management.png' | relative_url }}" alt="MOTOVAX unit management interface" />
+    <div>
+      <p class="project-meta">2026 · Automotive platform</p>
+      <h2>MOTOVAX &amp; AgenMobix</h2>
+      <p>Contributed to MOTOVAX, an automotive platform connecting vehicle inventory, leads, sales workflows, omnichannel interactions, and operational data. Developed AgenMobix, a tenant-facing catalog for sales agents to browse and present available vehicle stock.</p>
+      <p class="stack">ReactJS · Golang exposure · AI-assisted development</p>
+      <p><a href="https://motovax.ai/" target="_blank" rel="noreferrer">MOTOVAX ↗</a> &nbsp; <a href="https://agenmobix.id/" target="_blank" rel="noreferrer">AgenMobix ↗</a></p>
+    </div>
+  </article>
 
-      <section id="work" class="section-shell projects">
-        <div class="section-heading reveal"><p class="section-number">02 / Selected work</p><h2>Systems made for the work behind the screen.</h2></div>
-        <article class="project project-featured reveal">
-          <div class="project-content"><p class="project-year">2026 · Automotive</p><h3>MOTOVAX &amp;<br />AgenMobix</h3><p>Contributed to an automotive platform connecting vehicle inventory, leads, sales workflows, omnichannel interactions, and operational data. Built tenant-facing catalog experience for sales agents to browse and present available units.</p><ul class="tags"><li>ReactJS</li><li>Golang</li><li>AI-assisted workflow</li></ul><div class="project-links"><a href="https://motovax.ai/" target="_blank" rel="noreferrer">Visit MOTOVAX ↗</a><a href="https://agenmobix.id/" target="_blank" rel="noreferrer">Visit AgenMobix ↗</a></div></div>
-          <figure><img src="assets/images/motovax-unit-management.png" alt="Blurred MOTOVAX unit management interface" /><figcaption>Unit management · production interface</figcaption></figure>
-        </article>
-        <div class="project-grid">
-          <article class="project-card reveal"><img src="assets/images/medical-records.png" alt="Blurred electronic medical record interface" /><div><p class="project-year">2024–2025 · Healthcare</p><h3>E-Medical Records</h3><p>Translated hospital workflows into requirements, designed electronic medical-record data structures, integrated Laravel with a legacy application, and helped optimize production performance.</p><ul class="tags"><li>Laravel</li><li>Bootstrap</li><li>MySQL</li></ul></div></article>
-          <article class="project-card reveal"><img src="assets/images/kamus-erp.png" alt="Blurred ERP Sales Request interface" /><div><p class="project-year">2026 · ERP</p><h3>Kamus ERP, Uncharted &amp; Hokky</h3><p>Developed purchasing, inventory, POS, sales request, purchase order, and specialized operational sorting workflows across multiple ERP products.</p><ul class="tags"><li>Laravel</li><li>REST API</li><li>MySQL</li></ul></div></article>
-          <article class="project-card reveal"><img src="assets/images/briton-lms.png" alt="Briton e-learning dashboard" /><div><p class="project-year">2026 · E-learning</p><h3>Briton Learning Platform</h3><p>Extended a production learning platform across Course, IELTS, and Live Class features while improving application stability and user experience.</p><ul class="tags"><li>Laravel</li><li>LMS</li><li>Maintenance</li></ul><a class="inline-link" href="https://learn.onbriton.com" target="_blank" rel="noreferrer">Visit platform ↗</a></div></article>
-          <article class="project-card reveal"><img src="assets/images/hijabsheily-dashboard.png" alt="Internal management dashboard" /><div><p class="project-year">2024–Present · Operations</p><h3>HijabSheily IMS</h3><p>Maintained an internal system for inventory, order processing, quality control, operational reporting, and real-time Telegram notifications.</p><ul class="tags"><li>Laravel</li><li>Inventory</li><li>Telegram</li></ul></div></article>
-        </div>
-      </section>
+  <div class="project-grid">
+    <article class="project-card"><img src="{{ '/assets/img/medical-records.png' | relative_url }}" alt="Electronic medical records interface" /><p class="project-meta">2024–2025 · Healthcare</p><h2>E-Medical Records</h2><p>Translated hospital workflows into system requirements, designed medical-record data structures, integrated Laravel with a legacy hospital application, and improved performance.</p><p class="stack">Laravel · Bootstrap · jQuery · Database design</p></article>
+    <article class="project-card"><img src="{{ '/assets/img/kamus-erp.png' | relative_url }}" alt="ERP sales request interface" /><p class="project-meta">2026 · ERP</p><h2>Kamus ERP, Uncharted &amp; Hokky</h2><p>Developed purchasing, inventory, POS, sales request, purchase order, and specialised operational sorting workflows across multiple ERP systems.</p><p class="stack">Laravel · MySQL · REST API</p></article>
+    <article class="project-card"><img src="{{ '/assets/img/briton-lms.png' | relative_url }}" alt="Briton learning platform dashboard" /><p class="project-meta">2026 · E-learning</p><h2>Briton Learning Platform</h2><p>Extended Course, IELTS, and Live Class features while improving stability and the learning experience in a production LMS.</p><p class="stack">Laravel · LMS · Production maintenance</p><p><a href="https://learn.onbriton.com/" target="_blank" rel="noreferrer">Visit platform ↗</a></p></article>
+    <article class="project-card"><img src="{{ '/assets/img/hijabsheily-dashboard.png' | relative_url }}" alt="Internal management system dashboard" /><p class="project-meta">2024–Present · Operations</p><h2>HijabSheily IMS</h2><p>Maintained an internal system for inventory, orders, quality control, reporting, and real-time Telegram notifications.</p><p class="stack">Laravel · Inventory · Telegram integration</p></article>
+  </div>
+</section>
 
-      <section id="skills" class="section-shell skills reveal">
-        <p class="section-number">03 / Technical toolkit</p>
-        <div class="skills-list"><div><span>Backend</span><p>PHP · Laravel · CodeIgniter · REST API</p></div><div><span>Databases</span><p>MySQL · PostgreSQL · Oracle · SQL Server</p></div><div><span>Frontend</span><p>JavaScript · Vue.js · jQuery · Bootstrap · HTML</p></div><div><span>Engineering</span><p>API Integration · Database Design · Optimization · Code Review</p></div></div>
-      </section>
+<section class="portfolio-section skills-section">
+  <p class="section-label">Technical toolkit</p>
+  <dl class="skill-list">
+    <div><dt>Backend</dt><dd>PHP · Laravel · CodeIgniter · REST API</dd></div>
+    <div><dt>Databases</dt><dd>MySQL · PostgreSQL · Oracle · SQL Server</dd></div>
+    <div><dt>Frontend</dt><dd>JavaScript · Vue.js · jQuery · Bootstrap · HTML</dd></div>
+    <div><dt>Engineering</dt><dd>API integration · Database design · Optimization · Code review · AI-assisted development</dd></div>
+  </dl>
+</section>
 
-      <section class="section-shell additional reveal"><p class="section-number">04 / More experience</p><div><p>SIMRS eHOS · Fulusme.id · Inboks CMS · LODI Operational Dashboard · LODI Billing System · Transport Management System · English Proficiency Test · Asset Management for PDAM Surya Sembada</p></div></section>
-
-      <section id="contact" class="contact"><div class="section-shell"><p class="eyebrow">Open to relevant opportunities</p><h2>Let’s build something<br />useful together.</h2><a class="button button-light" href="https://github.com/seadramon" target="_blank" rel="noreferrer">Connect on GitHub <span>↗</span></a><p class="contact-note">Mojokerto, Indonesia · Available for software development opportunities</p></div></section>
-    </main>
-    <footer><span>© <span id="year"></span> Damar Margiwiguno</span><a href="#top">Back to top ↑</a></footer>
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
+<section class="portfolio-section more-work">
+  <p class="section-label">Additional experience</p>
+  <p>SIMRS eHOS · Fulusme.id · Inboks CMS · LODI Operational Dashboard · LODI Billing System · Transport Management System · English Proficiency Test · Asset Management for PDAM Surya Sembada</p>
+</section>
